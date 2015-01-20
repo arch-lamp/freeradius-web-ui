@@ -16,3 +16,6 @@ NOTE: Before executing the setup script, please make sure to assign full permiss
 <img src="http://a.pomf.se/edqmpl.png" width="230" height="150"/>
 <img src="http://a.pomf.se/kjbprz.png" width="230" height="150"/>
 <img src="http://a.pomf.se/uzvvwj.png" width="230" height="150"/>
+
+# FreeRADIUS Server Installation
+To install FreeRADIUS Server on CentOS 6.x. the installation script is available at: https://github.com/arch-lamp/install-free-radius-server

@@ -87,7 +87,7 @@ function uptime() {
 	$uptimeFile = "/proc/uptime";
 
 	$handler = fopen( $uptimeFile, 'r' );
-	$buffer  = split( ' ', fgets( $handler, 4096 ) );
+	$buffer  = explode( ' ', fgets( $handler, 4096 ) );
 	fclose( $handler );
 
 	$sys_ticks = trim( $buffer[0] );

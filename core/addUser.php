@@ -19,7 +19,7 @@ if ( empty( $_POST['fullname'] ) || empty( $_POST['username'] ) || empty( $_POST
 	$passwordType = $_POST['passwordType'];
 	require_once 'includes/class.RandomPassword.php';
 
-	$op            = ':==';
+	$op            = ':=';
 	$Password      = new RandomPassword();
 	$plainPassword = $Password->getPassword();
 

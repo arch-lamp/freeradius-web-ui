@@ -48,7 +48,7 @@ function currentPassword() {
 	$fetchPassword->execute();
 	$currentPassword = $fetchPassword->fetch( PDO::FETCH_OBJ );
 
-	return $currentPassword->password;
+	return $currentPassword->value;
 }
 
 function userFullName() {

@@ -55,11 +55,13 @@ class SessionManagement
 			$this->fingerPrint .= $this->checkIP();
 		}
 		if ($this->checkHost) {
+			set_error_handler(function() { /* ignore errors */ });
 			if (gethostbyaddr($this->checkIP()) == '') {
 				$this->fingerPrint .= 'Unknown Host';
 			} else {
 				$this->fingerPrint .= gethostbyaddr($this->checkIP());
 			}
+			restore_error_handler();
 		}
 
 		return sha1($this->fingerPrint);
